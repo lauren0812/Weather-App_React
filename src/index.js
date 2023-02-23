@@ -11,3 +11,7 @@ root.render(
     <Search />
   </StrictMode>
 );
+<p>
+  Hosted by :
+  <a href="https://github.com/lauren0812/Weather-App_React.git"> GitHub</a>
+</p>;
