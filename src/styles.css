@@ -40,3 +40,7 @@ button {
   font-weight: bold;
   box-shadow: none;
 }
+
+.links a {
+  color: white;
+}
