@@ -4,8 +4,7 @@ import "./styles.css";
 export default function Hosted() {
   <div>
     <a
-      href="https://github.com/lauren0812/Laurens_WeatherApp.git"
-      id="code-url"
+      href="https://github.com/lauren0812/Weather-App_React.git"
       target="_blank"
     >
       Open-source code
