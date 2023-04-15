@@ -45,7 +45,7 @@ export default function Search() {
     return (
       <div>
         {form}
-        <h4>Right now in {city}</h4>
+        <h4>Currently in {city}</h4>
         <ul>
           <li> {Math.round(weather.temperature)} °C </li>
           <li>
