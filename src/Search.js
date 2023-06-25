@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./styles.css";
+import FormattedDate from "./FormattedDate";
 
 export default function Search() {
   let [city, setCity] = useState("");
@@ -38,6 +39,9 @@ export default function Search() {
         onChange={updateCity}
       />
       <button type="Submit">Search</button>
+      <li>
+        <FormattedDate />
+      </li>
     </form>
   );
 
