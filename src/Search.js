@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
 import axios from "axios";
 import "./styles.css";
 
@@ -12,7 +13,6 @@ export default function Search() {
     setWeather({
       temperature: Math.round(response.data.main.temp),
       humidity: response.data.main.humidity,
-      date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       wind: Math.round(response.data.wind.speed),
@@ -39,6 +39,9 @@ export default function Search() {
         onChange={updateCity}
       />
       <button type="Submit">Search</button>
+      <li>
+        <FormattedDate date={weatherData.date} />
+      </li>
     </form>
   );
 
@@ -46,7 +49,6 @@ export default function Search() {
     return (
       <div>
         {form}
-        <li>{weather.Data.date.getDay()}</li>
         <h4>Currently in {city}</h4>
         <ul>
           <li> {Math.round(weather.temperature)} °C </li>
