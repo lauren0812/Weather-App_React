@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import FormattedDate from "./FormattedDate";
 import axios from "axios";
 import "./styles.css";
 
@@ -39,9 +38,6 @@ export default function Search() {
         onChange={updateCity}
       />
       <button type="Submit">Search</button>
-      <li>
-        <FormattedDate date={weatherData.date} />
-      </li>
     </form>
   );
 
